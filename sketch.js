@@ -6,17 +6,19 @@ var database, gameState;
 var form, player, playerCount;
 var allPlayers, car1, car2, fuels, powerCoins, obstacles;
 var cars = [];
+var hiroshima;
 
 function preload() {
   backgroundImage = loadImage("./assets/planodefundo.png");
-  car1_img = loadImage("../assets/car1.png");
-  car2_img = loadImage("../assets/car2.png");
-  track = loadImage("../assets/pista.png");
+  car1_img = loadImage("car1.png");
+  car2_img = loadImage("car2.png");
+  track = loadImage("pista.png");
   fuelImage = loadImage("./assets/fuel.png");
   powerCoinImage = loadImage("./assets/goldCoin.png");
   obstacle1Image = loadImage("./assets/obstacle1.png");
   obstacle2Image = loadImage("./assets/obstacle2.png");
   lifeImage = loadImage("./assets/life.png");
+  hiroshima = loadImage("./assets/blast.png");
 }
 
 function setup() {
